@@ -1,18 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>STOCKERR-search</title>
+    <title>Stockerr-Search</title>
     <link rel="stylesheet" href="./style.css" />
-  </head>
-  <body>
+    <script>
+        watch_arr = []
+        function a(input, symbol, company_name) {
+            let temp = {
+                Input: input,
+                symbol: symbol,
+                Company_name: company_name
+            };
+            watch_arr.push(temp);
+            console.log(watch_arr);
+        }
+    </script>
+</head>
+
+<body>
+    <a href="/watch.html">Watch List</a>
     <div class="container">
-      <input type="text" placeholder="Enter the keyword" class="company" />
+        <input type="text" placeholder="Enter the keyword" class="company">
     </div>
     <div class="display"></div>
-    <script type="module" src="./script.js"></script>
+    <script type="module" src="./search_controller.js"></script>
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <script src="https://d3js.org/d3.v5.min.js"></script>
-  </body>
+</body>
+
 </html>
