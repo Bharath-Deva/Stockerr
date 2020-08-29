@@ -3,5 +3,6 @@ export default async (input_data, api_key) => {
     let response = await axios.get(url);
     console.log(`got symb_response ${url} `);
     let symbol_list = response.data.bestMatches
-    return ([response, symbol_list])
+    console.log(symbol_list);
+    return (symbol_list)
 }

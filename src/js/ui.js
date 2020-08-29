@@ -9,7 +9,7 @@ export default (data) => {
   let stocks_today = response["Time Series (Daily)"][today]
   console.log(response, stocks_today)
   console.log(today);
-  console.log(display)
+
   var display_data =
     `
       <div class="open">

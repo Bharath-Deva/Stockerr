@@ -2,7 +2,7 @@
   "name": "stockerr",
   "version": "0.0.1",
   "description": "A simple javascript project to get stock info",
-  "main": "index.js",
+  "main": "search_controller.js",
   "scripts": {
     "dev": "webpack --mode development",
     "build": "webpack --mode production",
