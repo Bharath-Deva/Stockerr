@@ -1,5 +1,5 @@
-import controller from './modules/controller.js'
-import { company } from './modules/domElements.js'
+import controller from './controller.js'
+import { company } from './domElements.js'
 
 console.log("Web page loaded")
 

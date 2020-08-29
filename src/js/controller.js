@@ -1,6 +1,6 @@
-import stock_data from './stock_data.js';
+import stock_data from './stock_data';
 import symbol_data from './symbol_data.js';
-import UI from './ui.js';
+import UI from './ui';
 
 export default async (input_data, api_key) => {
     let [symb_response, symbol_list] = await symbol_data(input_data, api_key);
