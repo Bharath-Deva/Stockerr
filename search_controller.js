@@ -25,7 +25,7 @@ let event_cb = (() => {
                 let display_data = `Symbol:${element['1. symbol']}<br>Company Name:${element['2. name']}`
                 p.innerHTML = display_data;
                 div.appendChild(p);
-                let watch_btn = `<button onclick="a('${input_data}','${element['1. symbol']}','${element['2. name']}')">Add To Cart</button>`
+                let watch_btn = `<button onclick="update('${input_data}','${element['1. symbol']}','${element['2. name']}')">Add To Cart</button>`
                 div.insertAdjacentHTML('beforeend', watch_btn)
                 display.appendChild(div);
                 console.log(element);
@@ -39,4 +39,14 @@ let event_cb = (() => {
 
 company.addEventListener("keypress", event_cb
 );
+
+let update = (input, symbol, company_name) => {
+    let temp = {
+        Input: input,
+        symbol: symbol,
+        Company_name: company_name
+    };
+    watch_arr.push(temp);
+    console.log(watch_arr);
+}
 
