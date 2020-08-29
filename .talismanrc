@@ -2,3 +2,6 @@ fileignoreconfig:
 - filename: package-lock.json
   checksum: 7bca71b25e45d7ed791dc54f1947ce50041d24059edb96b2c9c3764cf2a02c9f
   ignore_detectors: [filecontent]
+- filename: src/js/index.js
+  checksum: 25d7bcd5b99c17a7ad8bffb1e8c908c889807cbe39a06fd62b73267753dcd91c
+  ignore_detectors: [filename, filesize]

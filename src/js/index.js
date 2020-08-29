@@ -4,7 +4,7 @@ import { company } from './domElements.js'
 console.log("Web page loaded")
 
 let event_cb = (() => {
-    let api_key = ["KXKAKROO5W0FDVSX", "BOTAHB99HFPL04KQ"];
+    let api_key = [process.env.API_KEY_1, process.env.API_KEY_2];
     let i = 0;
     return (e) => {
         if (e.keyCode == 13) {
