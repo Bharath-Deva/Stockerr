@@ -27,10 +27,12 @@
     "babel-polyfill": "^6.26.0",
     "babel-preset-env": "^1.7.0",
     "core-js": "^3.6.5",
+    "css-loader": "^4.2.2",
     "html-webpack-plugin": "^4.3.0",
     "install": "^0.13.0",
     "npm": "^6.14.8",
     "regenerator-runtime": "^0.13.7",
+    "style-loader": "^1.2.1",
     "webpack": "^4.44.1",
     "webpack-cli": "^3.3.12",
     "webpack-dev-server": "^3.11.0"

@@ -1,5 +1,6 @@
 import { company, display } from './domElements.js'
 import symbol_data from './symbol_data.js';
+// import '../../style.css'
 
 // export default let watch_arr = [];
 let update = (input, symbol, company_name) => {
@@ -15,7 +16,7 @@ let update = (input, symbol, company_name) => {
 console.log("Web page loaded")
 
 let event_cb = (() => {
-    let api_key = [process.env.API_KEY_1, process.env.API_KEY_2];
+    let api_key = ['KXKAKROO5W0FDVSX', 'BOTAHB99HFPL04KQ'];
     let i = 0;
     let n = api_key.length;
     return async (e) => {
