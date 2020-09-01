@@ -1,12 +1,12 @@
 import visualize from './visualize.js'
-import { display } from './domElements.js'
+import { display_watch as display } from './domElements.js'
 import stock_visualize from './stock_visualize.js';
 
 export default (data) => {
   let [response, company_name, input_data] = data;
   let date = new Date()
 
-  let today = `${date.getFullYear()}-0${date.getMonth() + 1}-${date.getDate() - 3}`
+  let today = `${date.getFullYear()}-0${date.getMonth()}-${date.getDate() + 9}`
   let stocks_today = response["Time Series (Daily)"][today]
   console.log(response, stocks_today)
   console.log(today);

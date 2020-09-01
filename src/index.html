@@ -6,28 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Stockerr-Search</title>
     <link rel="stylesheet" href="../style.css" />
-    <script>
-        watch_arr = []
-        function a(input, symbol, company_name) {
-            let temp = {
-                Input: input,
-                symbol: symbol,
-                Company_name: company_name
-            };
-            watch_arr.push(temp);
-            console.log(watch_arr);
-        }
-    </script>
 </head>
 
 <body>
     <div class="link">
-        <a class="link" href="./watch.html">Watch List</a>
+        <button class="watch_redirect">Watch List</button>
+        <button class="search_redirect">Serach List</button>
     </div>
     <div class="container">
         <input type="text" placeholder="Enter the keyword" class="company">
     </div>
-    <div id="display-index" class="display"></div>
+    <div class="display-search"></div>
+    <div class="display-watch"></div>
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <script src="https://d3js.org/d3.v5.min.js"></script>
     <script type="module" src="./js/search_controller.js"></script>

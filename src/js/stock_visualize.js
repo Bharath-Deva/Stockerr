@@ -5,7 +5,6 @@ export default (response, class_name) => {
     let data = Object.entries(response).map(item => [parseDate(item[0]), +item[1]["4. close"]])
 
     class_name = `.${class_name}`;
-    console.log(document.querySelector(".display"), class_name);
 
     let margin = {
         left: 100,
