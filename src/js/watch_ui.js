@@ -3,6 +3,7 @@ import { display_watch as display } from './domElements.js'
 import stock_visualize from './stock_visualize.js';
 
 export default (data) => {
+  let i = 0
   let [response, company_name, input_data] = data;
   let date = new Date()
 
@@ -34,7 +35,6 @@ export default (data) => {
   let svg = document.createElement('div');
   svg.className = input_data + '_svg';
   stock_container.appendChild(svg)
-  stock_visualize(response['Time Series (Daily)'], svg.className);
   svg.style.display = 'none';
 
   //childElements div: .<input_data>
@@ -42,7 +42,17 @@ export default (data) => {
   btn.className = 'btn'
   btn.innerHTML = `${input_data}`;
   btn.onclick = () => {
-    svg.style.display = 'block';
+    if (i == 0) {
+      stock_visualize(response['Time Series (Daily)'], svg.className);
+    }
+    if (i % 2) {
+      svg.style.display = 'none';
+    }
+    else {
+      svg.style.display = 'block';
+    }
+
+    i += 1;
   }
   div.appendChild(btn);
   let para = document.createElement('p')
